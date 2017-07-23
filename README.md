@@ -4,7 +4,7 @@ Flickrで大量フォローした後に、すぐフォローを外してフォ�
 自分がフォローしているユーザーのうち、相手からフォローされていない場合にユーザー名を表示します。
 ## 使い方
 
-Flickrからキーを取得してきて、ソースコードと同じディレクトリに"key"という名前のファイルを置いてください。  
+Flickrからキーを取得(<https://www.flickr.com/services/apps/create/apply>)してきて、ソースコードと同じディレクトリに"key"という名前のファイルを置いてください。
 中身は、
 ```
 (consumer key)
@@ -20,8 +20,9 @@ bundle install
 ```
 bundle exec ruby authorize.rb
 ```
-でアクセストークンを取得します。  
+でアクセストークンを取得します。
 表示されるURLにアクセスして、PINコードを取得し、入力してください。  
+
 最後に、
 ```
 bundle exec ruby checkr.rb
